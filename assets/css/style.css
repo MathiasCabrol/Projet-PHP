@@ -17,10 +17,9 @@ h1 {
     margin-top: 60px;
     margin-bottom: 30px;
 }
-.pcenter {
-    color:#226D68;
+p {
     text-align: center;
-    font-size: 12px;
+    font-size: 16px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -81,8 +80,29 @@ h2 {
 .img:hover {
     border: 1px solid #18534F;
   }
-
 .caption-text {
     text-align: center;
     font-size: small;
+}
+footer li {
+    list-style: none;
+    padding-right: 2.5em;
+}
+footer{
+    margin-top: 150px;
+    background-color: #18534F;
+    color: #ECF8F6;
+    text-align: center;
+}
+#facebook{
+background-color: #3b5998;
+}
+#twitter{
+background-color: #55acee;
+}
+#instagram{
+    background-color: #ac2bac
+}
+#footerBtn{
+    padding-top: 7px;
 }

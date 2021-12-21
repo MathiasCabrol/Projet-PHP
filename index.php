@@ -22,7 +22,7 @@ if (isset($_GET['page']) && is_numeric($_GET['page'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
+    <title><?= $xml->page[$page]->title; ?></title>
 </head>
 <body>
     <!-- Nav bar Mathias -->
@@ -46,9 +46,7 @@ if (isset($_GET['page']) && is_numeric($_GET['page'])) {
   </div>
 </nav>
 <!-- Structure php Joelle -->
-<?php 
-echo $xml->page[$page]->content;
-?>
+<?= $xml->page[$page]->content; ?>
 <!-- Footer Théo -->
 </body>
 </html>

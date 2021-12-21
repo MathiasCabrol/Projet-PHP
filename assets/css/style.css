@@ -44,6 +44,12 @@ h2 {
     margin-right: 300px;
     line-height: 40px;
 }
+@media (max-width: 1000px) { 
+    .articleText {
+        margin-left: 3em;
+        margin-right: 3em;
+    }
+ }
 .quote {
     position: relative;
     width: 100%;

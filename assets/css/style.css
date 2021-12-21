@@ -4,3 +4,25 @@ nav {
 nav li a, nav a {
     color: #ECF8F6;
 }
+
+.gallery_box_single {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.img {
+    margin: 5px;
+    border: 1px solid #ECF8F6;
+    float: left;
+}
+
+.img:hover {
+    border: 1px solid #18534F;
+  }
+
+.caption-text {
+    text-align: center;
+    font-size: small;
+}

@@ -1,0 +1,20 @@
+li{
+    list-style: none;
+    padding-right: 2em;
+}
+footer{
+    background-color: #18534F;
+    color: #ECF8F6;
+}
+#facebook{
+background-color: #3b5998;
+}
+#twitter{
+background-color: #55acee;
+}
+#instagram{
+    background-color: #ac2bac
+}
+#footerBtn{
+    padding-top: 7px;
+}

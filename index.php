@@ -1,6 +1,16 @@
 <?php $xmlFile = 'source.xml'; 
 $xml = simplexml_load_file($xmlFile); 
-var_dump($xml->page[0]);
+
+
+if (isset($_GET['page']) && is_numeric($_GET['page'])) {
+    if (($_GET['page'] >= 1) && ($_GET['page'] <= 4))  {
+        $page = $_GET['page']-1;
+    } else {
+        $page = 0;
+    }
+} else {
+    $page = 0;
+}
 
 ?>
 <!DOCTYPE html>
@@ -16,12 +26,10 @@ var_dump($xml->page[0]);
 <body>
     <!-- Nav bar Mathias -->
 <nav class="navbar navbar-expand-lg">
-  <a class="navbar-brand" href="">Navbar</a>
+  <a class="navbar-brand" href="">Ocordo</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
-    <?php
 
-    ?>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
@@ -37,9 +45,12 @@ var_dump($xml->page[0]);
   </div>
 </nav>
 <!-- Structure php Joelle -->
-
+<?php 
+echo $xml->page[$page]->content;
+?>
 <!-- Footer Théo -->
 </body>
 </html>
+
 
 

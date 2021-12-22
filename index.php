@@ -110,13 +110,13 @@ if (isset($_GET['page']) && is_numeric($_GET['page'])) {
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
-        <?php for($i=0; $i <= 3; $i++):
+        <?php foreach($xml->page as $menuTitle ):
         ?>
       <li class="nav-item">
-        <a class="nav-link" href="<?= ($i+1) . '.html' ?>"><?= $xml->page[$i]->menu ?></a>
+        <a class="nav-link" href="<?= $menuTitle->attributes()->id . '.html' ?>"><?= $menuTitle->menu ?></a>
       </li>
       <?php
-      endfor;
+      endforeach;
       ?>
     </ul>
   </div>

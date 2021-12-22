@@ -1,5 +1,5 @@
 //Regex qui accepte lettres minuscule/majuscule + accents + tirets
-const regexName = /^[a-zÀ-ÖØ-öø-ÿ]*([\-\s][a-zÀ-ÖØ-öø-ÿ]*)?$/i
+const regexName = /^[a-zÀ-ÖØ-öø-ÿ]+([\-\s][a-zÀ-ÖØ-öø-ÿ]*)?$/i
 //Regex acceptant un format mail
 const regexMail = /^[a-z0-9]([a-z0-9\-\_\.]*)[@]([a-z0-9\.]+)[\.]([a-z]){2,5}/i
 //Regex acceptant un numero de tel
@@ -15,27 +15,27 @@ const errorMessageSubject = "Merci d'entrer un sujet uniquement en lettres."
 const errorMessageCity = "Merci d'entrer une ville en lettres."
 const errorMessageMessage = "Merci d'entrer votre message." 
 
-nameInput.addEventListener("blur", function () {
+nameInput.addEventListener("input", function () {
     regexTest(this, regexName, errorMessageName)
 })
 
-mailInput.addEventListener("blur", function () {
+mailInput.addEventListener("input", function () {
     regexTest(this, regexMail, errorMessageMail)
 })
 
-telInput.addEventListener("blur", function () {
+telInput.addEventListener("input", function () {
     regexTest(this, regexTel, errorMessageTel)
 })
 
-subjectInput.addEventListener("blur", function () {
+subjectInput.addEventListener("input", function () {
     regexTest(this, regexText, errorMessageSubject)
 })
 
-cityInput.addEventListener("blur", function () {
+cityInput.addEventListener("input", function () {
     regexTest(this, regexText, errorMessageCity)
 })
 
-MessageInput.addEventListener("blur", function () {
+MessageInput.addEventListener("input", function () {
     regexTest(this, regexText, errorMessageMessage)
 })
 
@@ -51,12 +51,13 @@ function regexTest(inputFull, regex, errorMessage) {
     }
 
     //Création de la condition du test RegExp.
-    if (!regex.test(inputFull.value)) {
+    if (!regex.test(inputFull.value) && "" != inputFull.value) {
         //Création texte refus de validation.
         p.innerText = errorMessage
         //Changement de couleur.
         p.style.color = "red"
-    } else {
+    }
+     else {
         //on efface le texte
         p.innerText = ""
     }

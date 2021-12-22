@@ -102,17 +102,17 @@ if (isset($_GET['page']) && is_numeric($_GET['page'])) {
 </head>
 <body>
     <!-- Nav bar Mathias -->
-<nav class="navbar navbar-expand-lg">
+<nav class="navbar navbar-expand-lg navbar-light">
   <a class="navbar-brand" href="">Ocordo</a>
   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
-        <?php foreach($xml->page as $menuTitle ):
+        <?php foreach($xml->page as $menuTitle):
         ?>
       <li class="nav-item">
-        <a class="nav-link" href="<?= $menuTitle->attributes()->id . '.html' ?>"><?= $menuTitle->menu ?></a>
+        <a class="nav-link <?= $menuTitle->attributes()->id == $page+1 ? 'active' : '' ?>" href="<?= $menuTitle->attributes()->id . '.html' ?>"><?= $menuTitle->menu ?></a>
       </li>
       <?php
       endforeach;
@@ -142,6 +142,7 @@ if (isset($_GET['page']) && is_numeric($_GET['page'])) {
       </div>
     </section>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <script src="assets/js/script.js"></script>
 </body>
 </html>

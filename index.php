@@ -110,7 +110,7 @@ if (isset($_GET['page']) && is_numeric($_GET['page'])) {
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
-        <?php foreach($xml->page as $menuTitle ):
+        <?php foreach($xml->page as $menuTitle):
         ?>
       <li class="nav-item">
         <a class="nav-link <?= $menuTitle->attributes()->id == $page+1 ? 'active' : '' ?>" href="<?= $menuTitle->attributes()->id . '.html' ?>"><?= $menuTitle->menu ?></a>

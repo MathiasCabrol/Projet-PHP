@@ -1,3 +1,4 @@
+/* Style navBar */
 nav {
     background-color: #18534F;
 }
@@ -7,9 +8,13 @@ nav li a, nav a {
 nav li a:hover, nav a:hover {
     color: #FEEAA1;
 }
+/* Propriété active en fonction de l'URL */
 .active {
     color: #FEEAA1;
 }
+
+/* Styles globaux
+h1, h2 et p */
 h1 {
     color:#18534F;
     text-align: center;
@@ -22,6 +27,8 @@ p {
     font-size: 16px;
     margin-top: 10px;
     margin-bottom: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 h2 {
     color:#18534F;
@@ -30,6 +37,8 @@ h2 {
     margin-top: 60px;
     margin-bottom: 30px;
 }
+
+/* Style paragraphes articles */
 .articleText::first-letter {
     color: #D6955B;
     font-size: 40px;
@@ -64,27 +73,29 @@ h2 {
 .serious {
     margin-top: 120px;
 }
+
+/* Style images page d'accueil */
 .gallery_box_single {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
-
 .img {
     margin: 5px;
     border: 1px solid #ECF8F6;
     float: left;
+    border-radius: 3px;
 }
-
 .img:hover {
     border: 1px solid #18534F;
-}
-
+  }
 .caption-text {
     text-align: center;
     font-size: small;
 }
+
+/* Style Footer */
 footer li {
     list-style: none;
     padding-right: 2.5em;
@@ -95,6 +106,7 @@ footer{
     color: #ECF8F6;
     text-align: center;
 }
+/* Logos réseaux sociaux */
 #facebook{
 background-color: #3b5998;
 }
@@ -108,25 +120,51 @@ background-color: #55acee;
     padding-top: 7px;
 }
 
-
+/* Style global h3 */
 h3 {
     text-align: center;
     color : #18534F;
     font-size : 20px;
-    
-}
-
-.video {
-    display: block;
-    margin: auto;
-} 
-
-.list-group {
     margin-bottom: 50px;
 }
 
+/* Page à propos */
+/* Style vidéo */
+.video {
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+} 
+/* Style listes */
 .list-group li {
-    margin-left: 25%;
     list-style-type: circle;
     font-size: 16px;
+    line-height: 40px;
+}
+.list-group {
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.list-big {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+/* Responsive */
+@media (max-width: 1200px){
+    .list-small {
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+}
+@media (min-width: 1200px){
+    .list-small {
+        margin-left: 5%;
+        display: -ms-flexbox;           /* IE 10 */
+        display: -webkit-flex;          /* Safari 6.1+. iOS 7.1+ */
+        display: flex;
+        -webkit-flex-flow: wrap column; /* Safari 6.1+ */
+        flex-flow: wrap column;
+        max-height: 150px;              
+    }   
 }

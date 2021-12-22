@@ -92,16 +92,16 @@ bénéficier de prix très compétitifs et d’un excellent rapport qualité/pri
 </ul>
 <div role="form">
     <form action="#" method="post" class="form" novalidate="novalidate">
-        <label>Votre nom * :</label><input name="your-name" value="" size="40" class="form-control text validates-as-required" type="text">
-        <label>Votre email :</label><input name="your-email" value="" size="40" class="form-control text email validates-as-email"  type="email">
+        <label>Votre nom * :</label><input id="nameInput" name="your-name" value="" size="40" class="form-control text validates-as-required" type="text">
+        <label>Votre email :</label><input id="mailInput" name="your-email" value="" size="40" class="form-control text email validates-as-email"  type="email">
         <label>Votre numéro de téléphone * :</label>
-        <input name="your-tel-615" value="" size="40" class="form-control text tel validates-as-required validates-as-tel"   type="tel">
+        <input id="telInput" name="your-tel-615" value="" size="40" class="form-control text tel validates-as-required validates-as-tel"   type="tel">
         <label>Sujet :</label>
-        <input name="your-subject" value="" size="40" class="form-control text"  type="text">
+        <input id="subjectInput" name="your-subject" value="" size="40" class="form-control text"  type="text">
         <label>Votre ville :</label>
-        <input name="your-ville" value="" size="40" class="form-control text"  type="text">
+        <input id="cityInput" name="your-ville" value="" size="40" class="form-control text"  type="text">
         <label>Votre message * :</label>
-        <textarea name="your-message" cols="40" rows="10" class="form-control textarea validates-as-required"  ></textarea>
+        <textarea id="MessageInput" name="your-message" cols="40" rows="10" class="form-control textarea validates-as-required"  ></textarea>
         <input type="submit" name="send" value="Envoyer"/>
     </form>
 </div>]]></content>

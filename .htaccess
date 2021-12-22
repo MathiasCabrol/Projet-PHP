@@ -2,4 +2,4 @@ Options +Indexes
 Options +FollowSymlinks
 RewriteEngine on
 RewriteBase /
-RewriteRule ^(.*).html$ PHP/Projet\ PHP/index.php?page=$1 [L]
+RewriteRule ^(.*).html$ index.php?page=$1 [L]

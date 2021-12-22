@@ -28,9 +28,9 @@
 <h3>Présentation de notre entreprise</h3>
 <p>Nous sommes un groupement permanent d’entreprises locales du bâtiment spécialisées dans les travaux de rénovation d’appartements et de maisons et de construction d’extensions horizontale ou verticale de maisons.</p><p>
     Nous travaillons exclusivement pour les particuliers.</p>
-<p><iframe src="https://www.youtube.com/embed/Crh5lFpNK0o?feature=oembed" allowfullscreen="" width="500" height="281" frameborder="0"></iframe></p>
+<p class="video"><iframe src="https://www.youtube.com/embed/Crh5lFpNK0o?feature=oembed" allowfullscreen="" width="500" height="281" frameborder="0"></iframe></p>
 <p>Notre groupement est en mesure de vous proposer les compétences métier dans le gros oeuvre et le second oeuvre :</p><p>
-<ul>
+<ul class="list-group">
     <li>Maçonnerie générale</li><li>
         Travaux de toiture</li><li>
         Isolation thermique et phonique</li><li>
@@ -49,7 +49,7 @@ Quels sont les avantages en travaillant avec notre groupement ? Simplicité, Sé
 Pourquoi la Simplicité ? Parce que vous avez un seul interlocuteur qui est disponible de la préparation au chiffrage de l’ensemble de vos travaux.</p><p>
 
     Pourquoi la Sécurité ? Par ce que pour élaborer votre projet de travaux de rénovation ou de construction d’extension nous :</p><p>
-<ul>   
+<ul class="list-group">   
     <li>fixons un premier rendez-vous au cours duquel nous vous écoutons nous parlez de votre projet de travaux. À ce stade nous pouvons déjà vous conseiller.</li>
 <li>établissons un chiffrage détaillé lot par lot.</li>
 <li>vous remettons un dossier-devis comprenant les devis détaillés avec les dates prévisionnelles de début et de fin d’intervention,les assurances décennales et la RC professionnelle,</li>

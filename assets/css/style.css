@@ -74,6 +74,9 @@ h2 {
 .serious {
     margin-top: 120px;
 }
+.bottomText {
+    margin-bottom: 130px;
+}
 
 /* Style images page d'accueil */
 .gallery_box_single {
@@ -102,7 +105,7 @@ footer li {
     padding-right: 2.5em;
 }
 footer{
-    margin-top: 150px;
+    margin-top: 60px;
     background-color: #18534F;
     color: #ECF8F6;
     text-align: center;
@@ -131,11 +134,14 @@ h3 {
 
 /* Page à propos */
 /* Style vidéo */
-.video {
+.videoFrame {
     display: block;
     margin: auto;
     margin-top: 50px;
     margin-bottom: 50px;
+    border: 6px solid #18534F;
+    border-radius: 4px;
+    box-shadow: 5px 5px 5px lightgrey;
 } 
 /* Style listes */
 .list-group li {
@@ -189,13 +195,13 @@ h3 {
         top: 25px;
     }
 }
-iframe{
+.maps{
     padding-right: 10%;
     border-radius: 3px;
 }
 #devisList{
     list-style-type: none;
-    margin-left: 135px;
+    margin-left: 125px;
 }
 #devisList li{
     margin-top: 2px;
@@ -239,4 +245,17 @@ iframe{
     width: 10em;
     margin-left: 27%;
     margin-top: 1.25em;
+}
+.topLine {
+    border-top: 2px solid #18534F;
+    padding-top: 50px;
+}
+.footerText {
+    color: #ECF8F6;
+    margin-bottom: 20px;
+}
+.footerTitle {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #ECF8F6;
 }

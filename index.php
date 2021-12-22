@@ -123,7 +123,7 @@ if (isset($_GET['page']) && is_numeric($_GET['page'])) {
 <!-- Structure php Joelle -->
 <?= $xml->page[$page]->content; ?>
 <!-- Footer Théo -->
-  <footer class="container-fluid p-4 text-center">
+  <footer class="container-fluid text-center">
     <section class="row" id="footerBtn">
         <div class="col">
           <a class="btn btn-primary btn-floating m-1" id="facebook" href="" role="button"> <i class="bi bi-facebook"> </i></a>
@@ -131,14 +131,10 @@ if (isset($_GET['page']) && is_numeric($_GET['page'])) {
           <a class="btn btn-primary btn-floating m-1" href="" id="instagram" role="button"> <i class="bi bi-instagram"> </i></a>
         </div>
     </section>
-    <section class="row mt-4">
+    <section class="row">
       <div class="col">
-        <h3>Nous contacter</h3>
-          <ul>
-            <li>Ocordo Travaux</li>
-            <li>11, allée de l'île Gloriette</li>
-            <li>44000 Nantes</li>
-          </ul>
+          <h3 class="footerTitle">Ocordo Travaux</h3>
+            <p class="footerText">11, allée de l'île Gloriette, 44000 Nantes</p>
       </div>
     </section>
   </footer>

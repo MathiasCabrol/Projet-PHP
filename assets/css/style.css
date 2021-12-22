@@ -1,6 +1,7 @@
 nav {
     background-color: #18534F;
 }
+
 nav li a, nav a {
     color: #ECF8F6;
 }
@@ -129,4 +130,7 @@ h3 {
     margin-left: 25%;
     list-style-type: circle;
     font-size: 16px;
+}
+input {
+    width: 50%;
 }

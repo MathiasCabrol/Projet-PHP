@@ -113,7 +113,7 @@ if (isset($_GET['page']) && is_numeric($_GET['page'])) {
         <?php foreach($xml->page as $menuTitle ):
         ?>
       <li class="nav-item">
-        <a class="nav-link" href="<?= $menuTitle->attributes()->id . '.html' ?>"><?= $menuTitle->menu ?></a>
+        <a class="nav-link <?= $menuTitle->attributes()->id == $page+1 ? 'active' : '' ?>" href="<?= $menuTitle->attributes()->id . '.html' ?>"><?= $menuTitle->menu ?></a>
       </li>
       <?php
       endforeach;

@@ -12,6 +12,7 @@ if (isset($_GET['page']) && is_numeric($_GET['page'])) {
     $page = 0;
 }
 
+
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -35,8 +36,8 @@ if (isset($_GET['page']) && is_numeric($_GET['page'])) {
     <ul class="navbar-nav">
         <?php for($i=0; $i <= 3; $i++):
         ?>
-      <li class="nav-item active">
-        <a class="nav-link" href="<?= ($i+1) . '.html' ?>"><?= $xml->page[$i]->menu ?></a>
+      <li class="nav-item">
+        <a class="nav-link <?= ($page == $i) ? 'active' : ''; ?>" href="<?= $xml->page[$i]->attributes()->id . '.html' ?>"><?= $xml->page[$i]->menu ?></a>
       </li>
       <?php
       endfor;
@@ -44,6 +45,7 @@ if (isset($_GET['page']) && is_numeric($_GET['page'])) {
     </ul>
   </div>
 </nav>
+
 <!-- Structure php Joelle -->
 <?= $xml->page[$page]->content; ?>
 <!-- Footer Théo -->

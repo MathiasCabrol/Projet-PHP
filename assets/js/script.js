@@ -5,7 +5,7 @@ const regexMail = /^[a-z0-9]([a-z0-9\-\_\.]*)[@]([a-z0-9\.]+)[\.]([a-z]){2,5}/i
 //Regex acceptant un numero de tel
 const regexTel = /0[0-9]([\.\-\s])?([0-9]{2}([\.\-\s])?){3}[0-9]{2}$/
 //Regex acceptant du texte sans caractères spéciaux
-const regexText = /^[A-Za-zÀ-ÖØ-öø-ÿ\s\-\'\.]+$/i
+const regexText = /^[A-Za-zÀ-ÖØ-öø-ÿ\s\-'.]+$/i
 
 //Message d'erreur pour les différents champs
 const errorMessageName = "Merci d'entrer un nom uniquement en lettres, il est possible d'utiliser un tiret."

@@ -235,9 +235,6 @@ h3 {
     height: 2.5em;
     border: none;
     border-radius: 3px;
-    animation-name: formAnimation;
-    animation-iteration-count: infinite;
-    animation-duration: 3s;
 }
 #formSubmit:hover{
     background-color: #226D68;

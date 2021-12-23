@@ -1,3 +1,6 @@
+body{
+   background-color: #FEEAA1;
+}
 /* Style navBar */
 nav {
     background-color: #18534F !important;
@@ -68,7 +71,7 @@ h2 {
     left: 60%;
     bottom: -20%;
     font-size: 30px;
-    font-family: cursive;
+    font-family: Brush Script MT, cursive; 
     text-decoration: underline;
 }
 .serious {
